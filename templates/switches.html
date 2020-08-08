@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chaitanya's Room</title>
+    <style>
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+</style>
+  </head>
+  <body>
+    <h1>Chaitanya's Room</h1>
+    <div class="topnav">
+     <a href="/">Home</a>
+     <a class="active" href="#">Switches</a>
+   </div>
+   <div>
+     <br>
+     <fieldset>
+       <legend>Switch Status</legend>
+       <text>Last updated at {{sut}} IST</text> <button onclick="document.location=''">Refresh</button><br><br>
+       <div style='padding-bottom: 12px; padding-left:10px'><label>Switch 1: {{s1}}</label><a style='position: relative; padding: 10px; left:{%if s1 == "ON"%}16px{%else%}10px;padding-right:16px{%endif%}; background-color: powderblue' href='/s/s1/{%if s1 == "ON"%}on{%else%}off{%endif%}'>{%if s1 == 'ON'%}OFF{%else%}ON{%endif%}</a><br></div>
+       <div style='padding-bottom: 12px; padding-left:10px'><label>Switch 2: {{s2}}</label><a style='position: relative; padding: 10px; left:{%if s2 == "ON"%}16px{%else%}10px;padding-right:16px{%endif%}; background-color: powderblue' href='/s/s2/{%if s2 == "ON"%}on{%else%}off{%endif%}'>{%if s2 == 'ON'%}OFF{%else%}ON{%endif%}</a><br></div>
+       <div style='padding-bottom: 12px; padding-left:10px'><label>Switch 3: {{s3}}</label><a style='position: relative; padding: 10px; left:{%if s3 == "ON"%}16px{%else%}10px;padding-right:16px{%endif%}; background-color: powderblue' href='/s/s3/{%if s3 == "ON"%}on{%else%}off{%endif%}'>{%if s3 == 'ON'%}OFF{%else%}ON{%endif%}</a><br></div>
+       <div style='padding-bottom: 12px; padding-left:10px'><label>Switch 4: {{s4}}</label><a style='position: relative; padding: 10px; left:{%if s4 == "ON"%}16px{%else%}10px;padding-right:16px{%endif%}; background-color: powderblue' href='/s/s4/{%if s4 == "ON"%}on{%else%}off{%endif%}'>{%if s4 == 'ON'%}OFF{%else%}ON{%endif%}</a><br></div>
+     </fieldset>
+   </div>
+  </body>
+</html>
