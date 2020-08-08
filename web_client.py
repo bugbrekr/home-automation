@@ -2,7 +2,6 @@ import requests
 import flask
 import datetime
 import os
-ASSETS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 app = flask.Flask(__name__)
 
@@ -87,5 +86,4 @@ def test():
     return str(flask.request.user_agent)
 
 if __name__=='__main__':
-    context = ('local.crt', 'local.key')#certificate and key files
-    app.run(debug=True, port='80', host='0.0.0.0')
+    app.run(port='80', host='0.0.0.0')
