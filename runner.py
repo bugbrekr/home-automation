@@ -2,7 +2,7 @@ import requests
 import datetime
 import time
 ft = True
-while 0:
+while 1:
     if ft:
         print('Runner INITIALIZED')
     dt = datetime.datetime.now()
