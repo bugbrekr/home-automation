@@ -42,7 +42,7 @@
    <div>
      <br>
      <fieldset>
-       <legend>Switch Status</legend>
+       <legend>Switch Control Panel</legend>
        <text>Last updated at {{sut}} IST</text> <button onclick="document.location=''">Refresh</button><br><br>
        <div style='padding-bottom: 12px; padding-left:10px'><label>Switch 1: {{s1}}</label><a style='position: relative; padding: 10px; left:{%if s1 == "ON"%}16px{%else%}10px;padding-right:16px{%endif%}; background-color: powderblue' href='/s/s1/{%if s1 == "ON"%}on{%else%}off{%endif%}'>{%if s1 == 'ON'%}OFF{%else%}ON{%endif%}</a><br></div>
        <div style='padding-bottom: 12px; padding-left:10px'><label>Switch 2: {{s2}}</label><a style='position: relative; padding: 10px; left:{%if s2 == "ON"%}16px{%else%}10px;padding-right:16px{%endif%}; background-color: powderblue' href='/s/s2/{%if s2 == "ON"%}on{%else%}off{%endif%}'>{%if s2 == 'ON'%}OFF{%else%}ON{%endif%}</a><br></div>
