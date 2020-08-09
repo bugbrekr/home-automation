@@ -5,6 +5,7 @@ ft = True
 while 1:
     if ft:
         print('Runner INITIALIZED')
+        ft = False
     dt = datetime.datetime.now()
     hour = dt.hour
     if hour > 8 and hour < 17: #During day
