@@ -1,5 +1,7 @@
+import threading
 import requests
 import flask
+import time
 import datetime
 import os
 
@@ -85,5 +87,8 @@ def get_remote_addr():
 def test():
     return str(flask.request.user_agent)
 
-if __name__=='__main__':
+def main():
     app.run(port='80', host='0.0.0.0')
+
+if __name__=='__main__':
+    main()
